@@ -1,6 +1,6 @@
-# nano-react-app-template
+# nano-react-app-typescript-template
 
-The template project for [nano-react-app](https://github.com/adrianmcli/nano-react-app).
+A template project for [nano-react-app](https://github.com/adrianmcli/nano-react-app). This differs from the default by including support for typescript. In the most nano way, obviously.
 
 - `npm start` — This will spawn a development server with a default port of `1234`.
 - `npm run build` — This will output a production build in the `dist` directory.
@@ -32,3 +32,7 @@ import "./index.css";
 The Babel preset [babel-preset-nano-react-app](https://github.com/adrianmcli/babel-preset-nano-react-app) and a small amount of configuration is used to support the same transforms that Create React App supports.
 
 The Babel configuration lives inside `package.json` and will override an external `.babelrc` file, so if you want to use `.babelrc` remember to delete the `babel` property inside `package.json`.
+
+## typescript support
+
+Package.json includes a dependency on typescript ("^3.8.2" currently). A tsconfig.json is added with minimal configuration. The barest minimum of changes to index.js > index.ts and app.jsx > app.tsx were made as well.
